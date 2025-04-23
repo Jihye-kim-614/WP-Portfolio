@@ -1,0 +1,6 @@
+.login-btn, 
+.login-btn:hover, 
+.logout-btn, 
+.logout-btn:hover{
+    width:100px;
+}
