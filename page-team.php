@@ -11,7 +11,7 @@ get_header(); ?>
 		<?php the_archive_description('<div class="page-description">', '</div>'); ?>
 	</div>
 </div>
-
+<div class="inner-padding">
 <div class="swiper teamSwiper">
   <div class="swiper-wrapper">
     <?php
@@ -50,7 +50,7 @@ get_header(); ?>
   <div class="swiper-button-next"></div>
   <!-- <div class="swiper-pagination"></div> -->
 </div>
-
+</div>
 <?php get_footer(); ?>
 
 
@@ -69,17 +69,17 @@ document.addEventListener('DOMContentLoaded', function () {
       clickable: true,
     },
     breakpoints: {
- 
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1200: {
-        slidesPerView: 4,
-      }
-    }
+
+        768: {
+            slidesPerView: 1,
+        },
+        992: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 3,
+        }
+        }
   });
 });
 

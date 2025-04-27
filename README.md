@@ -46,4 +46,4 @@ This repository is shared **for educational and non-commercial use only.**
 
 **Jihye Kim**  
 Frontend & WordPress Developer  
-📫 [Your Email Here or LinkedIn/GitHub Link]
+📫 [huhuhahahoho11@gmail.com]

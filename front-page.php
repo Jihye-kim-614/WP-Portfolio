@@ -9,16 +9,43 @@ get_header(); ?>
 
 <div class="hero-viewport">
 <div class="page-header">
-    <div class="container">
-        
-            <h1 class="hero-title">PORTFOLIO <br>
-                <strong class="serif">WORDPRESS</strong> 
-            </h1><br>
+    <div class="container">        
+            <div class="hero-title"><h1 class="hero-title" style="
+      font-family: 'Pretendard', sans-serif;
+      font-weight: 500;
+      color: transparent;
+      -webkit-text-stroke: 2px black;
+      text-stroke: 2px black;
+      letter-spacing: 2px;
+      transform: scaleY(1.2); 
+    ">PORTFOLIO</h1>  
+            <strong class="serif">WORDPRESS</strong>
+            </div> 
+            <br>
             <h3 class="archive-description">Webdesign <br>using WordPress</h3>
         </div>
     </div>
-</div>
 
+</div>
+<div class="marquee">
+        <div class="marquee__content">
+            <ul class="list-inline">
+                <li>&nbsp;&nbsp;Web Designer</li>
+                <li>&nbsp;&nbsp;Creative Web Coding</li>
+                <li>&nbsp;&nbsp;WordPress Developer</li>
+            </ul>
+            <ul class="list-inline">
+                <li>&nbsp;&nbsp;Web Designer</li>
+                <li>&nbsp;&nbsp;Creative Web Coding</li>
+                <li>&nbsp;&nbsp;WordPress Developer</li>
+            </ul>
+            <ul class="list-inline">
+                <li>&nbsp;&nbsp;Web Designer</li>
+                <li>&nbsp;&nbsp;Creative Web Coding</li>
+                <li>&nbsp;&nbsp;WordPress Developer</li>
+            </ul>
+        </div>
+    </div>
 <section class="about-section">
     <div class="container">
     <div class="category-title-wrap">
@@ -41,27 +68,6 @@ get_header(); ?>
 
 
         </div>
-        </div>
-    </div>
-</section>
-<section class="marquee-section">
-    <div class="marquee">
-        <div class="marquee__content">
-            <ul class="list-inline">
-                <li>&nbsp;&nbsp;Web Designer</li>
-                <li>&nbsp;&nbsp;Creative Web Coding</li>
-                <li>&nbsp;&nbsp;WordPress Developer</li>
-            </ul>
-            <ul class="list-inline">
-                <li>&nbsp;&nbsp;Web Designer</li>
-                <li>&nbsp;&nbsp;Creative Web Coding</li>
-                <li>&nbsp;&nbsp;WordPress Developer</li>
-            </ul>
-            <ul class="list-inline">
-                <li>&nbsp;&nbsp;Web Designer</li>
-                <li>&nbsp;&nbsp;Creative Web Coding</li>
-                <li>&nbsp;&nbsp;WordPress Developer</li>
-            </ul>
         </div>
     </div>
 </section>
@@ -181,14 +187,17 @@ get_header(); ?>
         clickable: true,
         },
         breakpoints: {
+        480: {
+            slidesPerView: 1,
+        },
         768: {
             slidesPerView: 2,
         },
         992: {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         1200: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         }
         }
     });

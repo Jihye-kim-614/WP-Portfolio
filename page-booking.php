@@ -64,22 +64,25 @@ get_header(); ?>
         // 주차별로 슬라이드 생성
         foreach ($weeks as $week_number => $dates) : ?>
           <div class="swiper-slide">
-            <h4 style="margin-top:10px;">Kalenderwoche <?= $week_number ?></h4>
-            <ul style="list-style:none; padding-left:0;">
-              <?php foreach ($dates as $entry) : ?>
-                <li style="margin-bottom:20px;">
-                  <h5><?= $entry['date'] ?></h5>
-                  <?php foreach ($entry['slots'] as $slot) : ?>
-                    <a href="#" class="booking-slot"
-                       data-date="<?= $entry['date'] ?>"
-                       data-time="<?= $slot ?>"
-                       style="margin-right:8px; display:inline-block; padding:5px 10px; background:#eee; border-radius:4px;">
-                      <?= $slot ?>
-                    </a>
-                  <?php endforeach; ?>
-                </li>
-              <?php endforeach; ?>
-            </ul>
+            <div class="booking">
+
+              <h4 style="margin-top:10px;">Kalenderwoche <?= $week_number ?></h4>
+              <ul style="list-style:none; padding-left:0;">
+                <?php foreach ($dates as $entry) : ?>
+                  <li style="margin-bottom:20px;">
+                    <h5><?= $entry['date'] ?></h5>
+                    <?php foreach ($entry['slots'] as $slot) : ?>
+                      <a href="#" class="booking-slot"
+                        data-date="<?= $entry['date'] ?>"
+                        data-time="<?= $slot ?>"
+                        style="margin-right:8px; display:inline-block; padding:5px 10px; background:#eee; border-radius:4px;">
+                        <?= $slot ?>
+                      </a>
+                    <?php endforeach; ?>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
           </div>
         <?php endforeach; ?>
       </div> <!-- .swiper-wrapper -->
