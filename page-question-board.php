@@ -57,16 +57,16 @@ get_header(); ?>
                 while ($query->have_posts()) : $query->the_post();
                 $dropdown_category = get_post_meta(get_the_ID(), '_custom_category_label', true);
                 ?>
-<a href="<?php the_permalink(); ?>" class="question-item-link">
-  <div class="question-item">
-    <div class="question-meta">
-      <span class="question-number"><?php echo $counter ; ?></span>
-      <span class="question-category"><?php echo esc_html($dropdown_category); ?></span>
-      <span class="question-title"><?php the_title(); ?></span>
-      <span class="question-date"><?php echo get_the_date('d/m/Y'); ?></span>
-    </div>
-  </div>
-</a>
+                <a href="<?php the_permalink(); ?>" class="question-item-link">
+                  <div class="question-item">
+                    <div class="question-meta">
+                      <span class="question-number"><?php echo $counter ; ?></span>
+                      <span class="question-category"><?php echo esc_html($dropdown_category); ?></span>
+                      <span class="question-title"><?php the_title(); ?></span>
+                      <span class="question-date"><?php echo get_the_date('d/m/Y'); ?></span>
+                    </div>
+                  </div>
+                </a>
                     <?php
                     $counter--; // 🔽 하나씩 줄이기
                 endwhile;

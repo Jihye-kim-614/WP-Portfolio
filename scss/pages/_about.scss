@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# About-page (소개 페이지)
+--------------------------------------------------------------*/
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  align-items: flex-start;
+  padding: 80px 40px 40px;
+  gap: 27px;
+  text-align: left;
+}
+
+.profile-pic {
+  padding-top: 30px;
+  flex: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.skills-wrapper,
+.skills-wrapper2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid-typo {
+  margin: 0;
+  padding-bottom: 30px;
+
+  h6 {
+    font-weight: 500;
+    margin: 0;
+    padding: 5px;
+  }
+
+  p {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  a {
+    color: #1a1a1a;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.skills-row {
+  display: flex;
+  font-size: 16px;
+  color: #444;
+}

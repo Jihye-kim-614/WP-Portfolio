@@ -1,0 +1,111 @@
+.category-title-wrap {
+    margin-bottom: 40px;
+  }
+  
+  .card-type {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #3e4246;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  .card-type:hover {
+    background-color: #fff;
+  }
+  .card-type:hover .entry-title,
+  .card-type:hover .entry-category,
+  .card-type:hover .entry-date,
+  .card-type:hover .entry-excerpt {
+    color: #1C1E20;
+  }
+  .card-type .entry-thumbnail {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .card-type .entry-thumbnail img {
+    width: 100%;
+  }
+  
+  .blog-item .entry-title {
+    font-size: 18px;
+    height: 48px;
+    overflow: hidden;
+  }
+  .blog-item .entry-excerpt {
+    font-size: 14px;
+    height: 48px;
+    overflow: hidden;
+  }
+  
+  .entry-text-wrap {
+    margin-top: 16px;
+  }
+  
+  .entry-title {
+    font-size: 20px;
+    line-height: 1.5;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .entry-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .entry-category,
+  .entry-date {
+    font-size: 14px;
+    color: #b4b1ad;
+  }
+  
+  .entry-excerpt {
+    font-size: 14px;
+    color: #b4b1ad;
+  }
+  
+  .empty-wrap {
+    text-align: center;
+    margin: auto;
+  }
+  .empty-wrap .empty-graphic {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: url(img/img-empty.png) no-repeat center;
+    background-size: contain;
+  }
+  .empty-wrap p {
+    margin-top: 20px;
+  }
+  
+  /*--------------------------------------------------------------
+  # responsive - Tablet
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # responsive - Mobile
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 480px) {
+    .card-type {
+      padding: 16px;
+    }
+    .blog-item .entry-title {
+      font-size: 16px;
+      height: 45px;
+    }
+    .entry-title {
+      font-size: 18px;
+      height: 60px;
+    }
+    .entry-category,
+    .entry-date {
+      font-size: 12px;
+    }
+  }

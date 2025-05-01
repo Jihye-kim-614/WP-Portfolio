@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 Theme Name: Jihye Kim
-Author: JihyeJihye
+Author: JihyeJihyeJihye
 Author URI: http://jihye-kim.de
 Description: Jihye Kim's Portfolio
 */
@@ -743,9 +743,6 @@ section {
   .inner-padding {
     padding: 0 !important;
   }
-  /* .swiper-wrapper{
-    padding-left: 0 !important;
-  } */
 }
 @media only screen and (max-width: 768px) {
   section {
@@ -1904,7 +1901,10 @@ ul.menu > li > ul ul {
   }
 }
 /*--------------------------------------------------------------
-# Footer
+# Footer  # Scroll
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Footer Component
 --------------------------------------------------------------*/
 .footer {
   background-color: transparent;
@@ -1913,29 +1913,23 @@ ul.menu > li > ul ul {
   font-size: 14px;
   position: relative;
 }
-
 .footer__container {
   width: 100%;
-  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 40px 60px;
   border-top: 1px solid #3e4246;
 }
-
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 30px;
 }
-
 .footer__address {
   line-height: 1.6;
 }
-
 .footer__address .mailto:hover {
   text-decoration: underline;
 }
-
 .footer__menu {
   align-self: end;
 }
@@ -1945,21 +1939,27 @@ ul.menu > li > ul ul {
   padding: 0;
   margin: 0;
 }
-
 .footermenu__item {
   margin-bottom: 8px;
 }
-
 .footermenu__link {
   color: #000000;
   text-decoration: none;
   font-weight: 500;
 }
-
 .footermenu__link:hover {
   text-decoration: underline;
 }
 
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
   width: 40px;
@@ -1972,7 +1972,6 @@ ul.menu > li > ul ul {
   z-index: 1;
   transition: 0.3s;
 }
-
 .scroll-top .scroll-top-icon {
   margin: auto;
   margin-top: 8px;
@@ -1983,12 +1982,10 @@ ul.menu > li > ul ul {
   opacity: 0.7;
   transition: 0.3s;
 }
-
 .scroll-top:hover {
   cursor: pointer;
   background-color: #eee;
 }
-
 .scroll-top:hover .scroll-top-icon {
   opacity: 1;
 }
@@ -2004,7 +2001,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
   -ms-overflow-style: none;
   overflow: auto;
 }
@@ -2704,15 +2701,18 @@ figure img,
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # responsive - Mobile
---------------------------------------------------------------*/ 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Question-board-page # Lang Switcher
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Question-board-page
+--------------------------------------------------------------*/
 .question-board {
   margin: 20px;
   padding: 20px;
 }
 
-/* .question-board h1 {
-  text-align: center;
-} */
 .question-list {
   margin-bottom: 20px;
 }
@@ -2727,7 +2727,6 @@ figure img,
   justify-content: space-between;
   align-items: center;
 }
-
 .question-item:hover {
   background-color: #ffffff;
   border: 1px solid #3f3f3f;
@@ -2753,18 +2752,15 @@ figure img,
   font-size: 12px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* 수직 가운데 정렬 */
+  align-items: center;
   width: 100%;
   color: #2c2c2c;
 }
-
 .question-meta .question-number {
   font-weight: 500;
   color: #333;
   width: 10%;
-  /* margin-right: 15px; */
 }
-
 .question-meta .question-category {
   font-weight: 500;
   color: #444;
@@ -2772,43 +2768,32 @@ figure img,
   font-size: 12px;
   width: 15%;
 }
-
 .question-meta .question-title {
-  /* flex: 1; */
   padding-left: 3px;
   width: 60%;
 }
-
-.question-meta .question-title a,
-.question-meta .question-title h2,
-.question-meta .question-title p {
+.question-meta .question-title a, .question-meta .question-title h2, .question-meta .question-title p {
   color: #2c2c2c;
   text-decoration: none;
 }
-
-.question-meta .question-title a:hover {
+.question-meta .question-title a:hover, .question-meta .question-title h2:hover, .question-meta .question-title p:hover {
   color: #000000;
   font-weight: 500;
 }
-
 .question-meta .question-date {
   color: #555;
   text-align: right;
   width: 15%;
   font-size: 12px;
 }
-
 .question-meta .question-author {
   font-style: italic;
   color: #555;
-  /* margin-right: 10px; */
 }
 
 /* Header Section */
 .question-header {
   display: flex;
-  /* justify-content: space-between; */
-  /* font-weight: bold; */
   background-color: #dfdfdf;
   padding: 5px 15px;
   border: 1px solid #ddd;
@@ -2816,35 +2801,44 @@ figure img,
   margin: 20px 0 5px;
   font-size: 13px;
 }
-
 .question-header span {
   color: #333;
 }
-
-.question-header .question-number {
-  width: 10%;
-  border-right: 1px solid #7a7a7a;
-}
-
-.question-header .question-category {
-  width: 15%;
-  text-align: center;
-  border-right: 1px solid #7a7a7a;
-}
-
-.question-header .question-title {
-  width: 60%;
-  text-align: center;
-  border-right: 1px solid #7a7a7a;
-}
-
+.question-header .question-number,
+.question-header .question-category,
+.question-header .question-title,
 .question-header .question-date {
-  width: 15%;
+  border-right: 1px solid #7a7a7a;
   text-align: center;
+}
+.question-header .question-number.question-number,
+.question-header .question-category.question-number,
+.question-header .question-title.question-number,
+.question-header .question-date.question-number {
+  width: 10%;
+}
+.question-header .question-number.question-category,
+.question-header .question-category.question-category,
+.question-header .question-title.question-category,
+.question-header .question-date.question-category {
+  width: 15%;
+}
+.question-header .question-number.question-title,
+.question-header .question-category.question-title,
+.question-header .question-title.question-title,
+.question-header .question-date.question-title {
+  width: 60%;
+}
+.question-header .question-number.question-date,
+.question-header .question-category.question-date,
+.question-header .question-title.question-date,
+.question-header .question-date.question-date {
+  width: 15%;
+  border-right: none;
 }
 
 /*--------------------------------------------------------------
-switcher
+# Lang Switcher
 --------------------------------------------------------------*/
 .lang-switcher {
   text-align: center;
@@ -2852,7 +2846,6 @@ switcher
   display: flex;
   justify-content: flex-end;
 }
-
 .lang-switcher button {
   padding: 8px 16px;
   margin: 0 5px;
@@ -2863,28 +2856,26 @@ switcher
   border-radius: 6px;
   color: #b4b1ad;
 }
-
 .lang-switcher button:hover {
   background-color: #b4b1ad;
   color: #ffffff;
 }
 
-/* .lang-content{
-  height: 170px;
-} */
-/* --------------------------------------------------------- */
+/*--------------------------------------------------------------
+About-page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# About-page (소개 페이지)
+--------------------------------------------------------------*/
 .about-container {
   display: grid;
-  flex-direction: row; /* 가로 정렬 */
-  align-items: flex-start; /* 왼쪽 정렬 */
-  /* max-width: 800px; */
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  padding: 80px 40px 40px 40px;
+  align-items: flex-start;
+  padding: 80px 40px 40px;
   gap: 27px;
   text-align: left;
 }
 
-/* 비율 조절: 왼쪽 1 / 오른쪽 2 */
 .profile-pic {
   padding-top: 30px;
   flex: 1.6;
@@ -2892,7 +2883,6 @@ switcher
   flex-direction: column;
   gap: 12px;
 }
-
 .profile-pic img {
   width: 240px;
   height: 240px;
@@ -2901,8 +2891,8 @@ switcher
      object-fit: cover;
 }
 
-/* 오른쪽 영역: 능력치 */
-.skills-wrapper {
+.skills-wrapper,
+.skills-wrapper2 {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -2913,22 +2903,18 @@ switcher
   margin: 0;
   padding-bottom: 30px;
 }
-
 .grid-typo h6 {
   font-weight: 500;
   margin: 0;
   padding: 5px;
 }
-
 .grid-typo p {
   margin: 0;
   padding-bottom: 15px;
 }
-
 .grid-typo a {
   color: #1a1a1a;
 }
-
 .grid-typo a:hover {
   text-decoration: underline;
 }
@@ -2939,14 +2925,12 @@ switcher
   color: #444;
 }
 
-.skills-wrapper2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* --------------------------------------------------------- */
+/*--------------------------------------------------------------
+# Newsletter-page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Newsletter-page
+--------------------------------------------------------------*/
 .newsletter-item {
   padding: 10px 50px;
   border: 1px solid #e0e0e0;
@@ -2968,6 +2952,7 @@ switcher
 
 .newsletter-list :hover {
   background-color: #b4b1ad;
+  text-decoration: none;
 }
 
 .newsletter-title a {
@@ -2977,8 +2962,8 @@ switcher
   flex: 1; /* 제목이 넓게 차지하게 */
 }
 
-.newsletter-title a:hover {
-  text-decoration: underline;
+.newsletter-title :hover {
+  text-decoration: underline !important;
 }
 
 .newsletter-date {
@@ -3008,6 +2993,9 @@ switcher
   text-align: center;
 }
 
+/*--------------------------------------------------------------
+# Week Selector
+--------------------------------------------------------------*/
 .week-selector {
   display: flex;
   justify-content: center;
@@ -3039,38 +3027,35 @@ switcher
   white-space: nowrap;
   transition: background 0.2s ease;
 }
-
 .week-day:hover {
   background-color: #ddd;
 }
-
 .week-day.selected {
   background-color: #333;
   color: #fff;
 }
 
-/* --------------------------------------------------------- */
+/*--------------------------------------------------------------
+# Swiper #Team #Booking
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Swiper Component + Booking Card
+--------------------------------------------------------------*/
 .swiper {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;
 }
-
 .swiper.mySwiper {
   display: flex;
   justify-content: center;
 }
-
-/* .swiper-wrapper{
-  padding-left: 65px;
-} */
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
   color: #000;
 }
-
-.swiper-slide {
+.swiper .swiper-slide {
   display: flex;
   justify-content: center;
 }
@@ -3083,44 +3068,39 @@ switcher
 
 .card.team {
   width: 100%;
-  max-width: 270px;
-  margin: 0 auto; /* 가로 가운데 정렬 */
-  /* height: 520px; */
+  max-width: 260px;
+  margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
-  /* box-shadow: 0 4px 20px rgba(0,0,0,0.05); */
   transition: transform 0.3s;
-  /* padding-left: 65px; */
 }
-
 .card.team:hover {
   transform: translateY(-5px);
 }
-
 .card.team img {
   width: 100%;
-  height: 50%;
+  height: 60%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.card-body {
+.card.team .card-body {
   padding: 1rem;
   text-align: left;
 }
-
-.card-body h3 {
+.card.team .card-body h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
-
-.card-body p {
+.card.team .card-body p {
   margin-bottom: 0.4rem;
   font-size: 0.95rem;
   color: #444;
 }
 
+/*--------------------------------------------------------------
+# Animation
+--------------------------------------------------------------*/
 .fade-up {
   opacity: 0;
   transform: translateY(50px);

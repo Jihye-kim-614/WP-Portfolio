@@ -1,0 +1,180 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $bg-white;
+    -ms-overflow-style: none;
+    overflow: auto;
+  }
+  
+  .updated:not(.published) {
+    display: none;
+  }
+  
+  .page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+  }
+  
+  .home .page-header {
+    padding-top: 60px;
+  }
+  
+  
+  .page-header {
+    padding-top: 60px;
+    /* padding-bottom: 40px; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .page-header.page-cover-img {
+    margin-bottom: 80px;
+  }
+  .page-header .page-category {
+    margin-bottom: 20px;
+  }
+  .page-header .page-category a {
+    color: #E8E4DF;
+  }
+  .page-header .hero-title {
+    margin-bottom: 20px;
+  }
+  .page-header .hero-title .serif {
+    display: inline-block; /* 이거 추가해야 transform이 작동해! */
+    transform: skewX(-15deg) scaleY(1.2);
+    color: #000;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+  }
+  
+  .page-header .hero-deco {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .archive-description {
+    color: #b4b1ad !important;
+    font-size: clamp(18px, 4vw, 36px) !important;
+  }
+  .page-header .page-title {
+    font-size: 68px;
+    margin-bottom: 12px;
+    color: #000000;
+    
+  }
+  .page-header .page-desc {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #E8E4DF;
+  }
+  .page-header .page-desc strong {
+    font-weight: 700;
+    color: #E8E4DF;
+    margin-left: 10px;
+  }
+  
+  // section
+  .category-title-wrap {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .category-title-wrap .category-title {
+    margin: 0;
+    color: #b4b1ad;
+  }
+  
+  .about-section {
+    padding-top: 100px;
+    padding-bottom: 170px;
+  }
+  .about-section .text-wrap {
+    padding: 0 80px;
+  }
+  .about-section .text-wrap p {
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+  .about-section .img-wrap img {
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .section-blog{
+    padding: 130px 0px;
+  
+  }
+  
+  
+  
+  /* 404 */
+  .error404 .text-wrap {
+    text-align: center;
+  }
+  .error404 .error404-graphic {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: url(img/img-empty.png) no-repeat center;
+    background-size: contain;
+  }
+  
+  /* Search */
+  .search-results .page-header span {
+    color: #b4b1ad;
+  }
+
+
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {}
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    .home .page-header .container {
+      padding-top: 50px;
+    }
+    .page-header .hero-deco {
+      overflow-x: hidden;
+    }
+    .page-header .hero-deco div[class^=deco-] {
+      width: 80px;
+      height: 80px;
+    }
+    .page-header .hero-deco .deco-01 {
+      top: 60px;
+      right: 85%;
+    }
+    .page-header .hero-deco .deco-03 {
+      top: 50px;
+      left: 85%;
+    }
+    .page-header .page-title {
+      font-size: 56px;
+    }
+    .page-header .page-desc {
+      font-size: 14px;
+    }
+    .about-section {
+      padding: 40px 0;
+    }
+    .about-section .img-wrap {
+      padding: 20px;
+    }
+    .about-section .text-wrap {
+      padding: 0;
+      margin-top: 20px;
+    }
+  }

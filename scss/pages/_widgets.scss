@@ -1,0 +1,105 @@
+.wp-block-columns {
+	margin-bottom: 0;
+}
+
+.widget {
+border: 1px solid #3e4246;
+padding: 30px;
+margin-bottom: 20px;
+border-radius: 12px;
+}
+.footer-widget .widget {
+border: none;
+padding: 0;
+margin: 0;
+}
+.widget .widget-title {
+font-size: 14px;
+margin-bottom: 12px;
+}
+.widget .wp-block-latest-posts__list li {
+min-height: 120px;
+margin-bottom: 20px;
+}
+.widget .wp-block-latest-posts__list li:last-child {
+margin: 0;
+}
+.widget .wp-block-latest-posts__list img {
+border-radius: 12px;
+}
+.widget .wp-block-latest-posts__list .wp-block-latest-posts__post-title {
+color: #E8E4DF;
+font-size: 18px;
+}
+.widget .wp-block-latest-posts__list time {
+font-size: 12px;
+color: #b4b1ad;
+}
+.widget .wp-block-embed {
+margin: 0;
+}
+.widget .wp-block-embed-youtube .wp-block-embed__wrapper {
+width: 100%;
+border-radius: 8px;
+overflow: hidden;
+}
+.widget .wp-block-embed-youtube .wp-block-embed__wrapper iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+.wp-block-social-links .wp-social-link.wp-social-link.wp-social-link {
+margin: 0;
+padding: 0;
+}
+
+/* Tagcloud */
+.widget_tag_cloud .wp-block-tag-cloud.is-style-outline {
+gap: 8px;
+margin: 0;
+}
+.widget_tag_cloud .wp-block-tag-cloud.is-style-outline a {
+font-size: 14px !important;
+line-height: 1;
+padding: 8px 12px;
+color: #fff;
+border: none;
+background-color: #393d41;
+border-radius: 4px;
+display: inline-block;
+}
+.widget_tag_cloud .wp-block-tag-cloud.is-style-outline a:hover {
+background: #F06D49;
+}
+
+/* Search widget */
+.widget_search .search-form {
+display: flex;
+}
+.widget_search .search-field {
+width: 100%;
+}
+.widget_search .search-form label {
+width: 100%;
+margin: 0;
+}
+
+@media only screen and (max-width: 940px) {
+.widget {
+	padding: 12px;
+}
+}
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {}
+
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+}

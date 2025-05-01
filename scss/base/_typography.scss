@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Light.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Light.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Light.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Medium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Medium.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Medium.otf') format('opentype');
+  }
+  
+  
+  
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Pretendard', sans-serif;
+    
+  }
+  
+  body,
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  
+  
+  
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    clear: both;
+    color: #000000;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 8px;
+    letter-spacing: -0.04px;
+  }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    font-weight: inherit;
+    color: inherit;
+  }
+  
+  .hero-viewport {
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .hero-title {
+    padding-top: 0px;
+    font-size: clamp(48px, 10vw, 120px);
+    line-height: 110%;
+    
+  }
+  
+  
+  
+  h1 {
+    font-size: 60px;
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+  
+  h3 {
+    font-size: 36px;
+  }
+  
+  h4 {
+    font-size: 28px;
+  }
+  
+  h5 {
+    font-size: 24px;
+  }
+  
+  h6 {
+    font-size: 15px;
+  }
+  
+  p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #1a1a1a;
+  }
+  
+  a {
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #5c5c5c;
+  }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+  }
+  a:focus {
+    outline: 0;
+  }
+  a:hover, a:active {
+    outline: 0;
+  }
+  
+  blockquote {
+    background-color: transparent;
+    padding-left: 12px;
+    border-left: 3px solid #393A3D;
+    margin: 20px 0;
+  }
+  blockquote p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .color-1 {
+    color: #DA8B10;
+  }
+  /*--------------------------------------------------------------
+  # responsive - Tablet
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # responsive - Mobile
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 480px) {
+  
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+  
+    .category-title {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .about-container {
+  
+      padding: 40px 0px 40px 0px !important;
+      gap: 10px !important;
+  
+    }
+    .question-board {
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+    .newsletter-item {
+      padding: 7px 20px !important;
+    }
+  }
+  

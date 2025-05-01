@@ -1,0 +1,193 @@
+article {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .thumbnail-img {
+    border-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .post-header {
+    padding: 40px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+  .post-header p {
+    color: #E8E4DF;
+  }
+  .post-header .post-title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+  .post-header .post-desc {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .post-header .post-info {
+    margin: 20px 0;
+  }
+  .post-header .post-date {
+    font-size: 14px;
+    color: #b4b1ad;
+    margin-right: 12px;
+  }
+  .post-header .post-categories li {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+  }
+  .post-header .post-categories a {
+    font-size: 14px;
+    color: #b4b1ad;
+  }
+  .post-header .post-tags {
+    font-size: 0;
+  }
+  .post-header .post-tags a {
+    font-size: 14px !important;
+    line-height: 1;
+    padding: 8px 12px;
+    color: #fff;
+    border: none;
+    background-color: #393d41;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 8px 8px 0;
+  }
+  .post-header .post-tags a:hover {
+    background: #F06D49;
+  }
+  
+  .thumbnail-background {
+    width: 100%;
+    height: 320px;
+    background-size: cover !important;
+  }
+  
+  hr.divider {
+    margin: 40px 0;
+  }
+  
+  .wp-block-file {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #3e4246;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wp-block-file a {
+    color: #E8E4DF;
+  }
+  .wp-block-file a.wp-block-file__button {
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # Work
+  --------------------------------------------------------------*/
+  .single-work .post-header {
+    margin-top: 120px;
+    padding: 0;
+  }
+  .single-work .post-header .post-title {
+    font-size: 80px;
+    margin-top: 0;
+  }
+  .single-work .post-header .customfield {
+    margin-right: 24px;
+  }
+  .single-work h1,
+  .single-work h2,
+  .single-work h3,
+  .single-work h4 {
+    font-weight: bold;
+  }
+  .single-work h4 {
+    color: #b4b1ad;
+  }
+  .single-work article .wp-block-columns {
+    margin: 160px 0;
+  }
+  
+  figure,
+  .wp-block-image {
+    margin: 20px 0;
+  }
+  figure img,
+  .wp-block-image img {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .wp-block-video video {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .wp-block-embed-youtube .wp-block-embed__wrapper {
+    position: relative;
+    width: 100%;
+    padding: 55.6% 0 6px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    overflow: hidden;
+  }
+  .wp-block-embed-youtube iframe {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wp-block-embed {
+    margin: 2rem 0;
+    position: relative;
+    width: 100%;
+  }
+  
+  .wp-block-button {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .wp-block-button__link {
+    color: #fff !important;
+  }
+  
+  /*--------------------------------------------------------------
+  # responsive - Tablet
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # responsive - Mobile
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 480px) {
+    .single-work .post-header {
+      margin-top: 20px;
+    }
+    .single-work .post-header .post-title {
+      font-size: 40px;
+    }
+    .single-work .post-header .customfield {
+      margin-right: 16px;
+    }
+    .single-work article .wp-block-columns {
+      margin: 80px 0;
+    }
+    .single-work article h2 {
+      font-size: 32px;
+    }
+  }
