@@ -59,6 +59,12 @@
 
         </div>
     </header>
+    
+    <div class="breadcrumbs-container">
+        <?php if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+        } ?>
+    </div>
 
     <!-- 페이지 공통 레이아웃 -->
     <main id="main" class="site-main" role="main">

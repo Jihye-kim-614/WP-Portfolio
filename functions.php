@@ -263,10 +263,11 @@ function create_team_post_type() {
             ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array('slug' => 'team-members'), // ★ 이 줄 추가
+            'rewrite' => array('slug' => 'team-members'),
             'menu_position' => 5,
-            'menu_icon' => 'dashicons-groups', // 아이콘은 마음대로 바꿔도 돼
-            'supports' => array('title', 'editor', 'thumbnail')
+            'menu_icon' => 'dashicons-groups', 
+            'supports' => array('title', 'editor', 'thumbnail'),
+            'taxonomies' => array('category', 'post_tag')
         )
     );
 }

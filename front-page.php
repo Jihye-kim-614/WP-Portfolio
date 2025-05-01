@@ -8,70 +8,72 @@ get_header(); ?>
 
 
 <div class="hero-viewport">
-<div class="page-header">
-    <div class="container">        
-            <div class="hero-title"><h1 class="hero-title" style="
-      font-family: 'Pretendard', sans-serif;
-      font-weight: 500;
-      color: transparent;
-      -webkit-text-stroke: 2px black;
-      text-stroke: 2px black;
-      letter-spacing: 2px;
-      transform: scaleY(1.2); 
-    ">PORTFOLIO</h1>  
-            <strong class="serif">WORDPRESS</strong>
-            </div> 
-            <br>
-            <h3 class="archive-description">Webdesign <br>using WordPress</h3>
+    <div class="page-header">
+        <div class="container">        
+                <div class="hero-title"><h1 class="hero-title" style="
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 500;
+        color: transparent;
+        -webkit-text-stroke: 2px black;
+        text-stroke: 2px black;
+        letter-spacing: 2px;
+        transform: scaleY(1.2); 
+        ">PORTFOLIO</h1>  
+                <strong class="serif">WORDPRESS</strong>
+                </div> 
+                <br>
+                <h3 class="archive-description">Webdesign <br>using WordPress</h3>
+            </div>
         </div>
     </div>
 
 </div>
 <div class="marquee">
-        <div class="marquee__content">
-            <ul class="list-inline">
-                <li>&nbsp;&nbsp;Web Designer</li>
-                <li>&nbsp;&nbsp;Creative Web Coding</li>
-                <li>&nbsp;&nbsp;WordPress Developer</li>
-            </ul>
-            <ul class="list-inline">
-                <li>&nbsp;&nbsp;Web Designer</li>
-                <li>&nbsp;&nbsp;Creative Web Coding</li>
-                <li>&nbsp;&nbsp;WordPress Developer</li>
-            </ul>
-            <ul class="list-inline">
-                <li>&nbsp;&nbsp;Web Designer</li>
-                <li>&nbsp;&nbsp;Creative Web Coding</li>
-                <li>&nbsp;&nbsp;WordPress Developer</li>
-            </ul>
-        </div>
-    </div>
+            <div class="marquee__content">
+                <ul class="list-inline">
+                    <li>&nbsp;&nbsp;Web Designer</li>
+                    <li>&nbsp;&nbsp;Creative Web Coding</li>
+                    <li>&nbsp;&nbsp;WordPress Developer</li>
+                </ul>
+                <ul class="list-inline">
+                    <li>&nbsp;&nbsp;Web Designer</li>
+                    <li>&nbsp;&nbsp;Creative Web Coding</li>
+                    <li>&nbsp;&nbsp;WordPress Developer</li>
+                </ul>
+                <ul class="list-inline">
+                    <li>&nbsp;&nbsp;Web Designer</li>
+                    <li>&nbsp;&nbsp;Creative Web Coding</li>
+                    <li>&nbsp;&nbsp;WordPress Developer</li>
+                </ul>
+            </div>
+</div>
+
+<section class="section-blog fade-up">
 <section class="about-section">
     <div class="container">
-    <div class="category-title-wrap">
-            <h2 class="category-title">Who am I ?</h2>
-        </div>
-        <div class="inner-padding">
-        <div class="row">
-            <div class="col-6">
-                <div class="img-wrap">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/about-img-jihye.jpg" alt="" width="70%">
+        <div class="category-title-wrap">
+                <h2 class="category-title">Who am I ?</h2>
+            </div>
+            <div class="inner-padding">
+            <div class="row">
+                <div class="col-6">
+                    <div class="img-wrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/about-img-jihye.jpg" alt="" width="70%">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-wrap">
+                        <h2>Hi! I'am Jihye</h2>
+                        <p>I am web designer specialized in UX/UI, currently living in Berlin.</p>
+                        <a class="button" href="<?php echo esc_url(home_url('/about')); ?>">About me</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="text-wrap">
-                    <h2>Hi! I'am Jihye</h2>
-                    <p>I am web designer specialized in UX/UI, currently living in Berlin.</p>
-                    <a class="button" href="<?php echo esc_url(home_url('/about')); ?>">About me</a>
-                </div>
-            </div>
-
-
-        </div>
         </div>
     </div>
 </section>
-<section class="section-blog">
+</section>
+<section class="section-blog ">
     <div class="container">
         
         <div class="category-title-wrap">
@@ -202,4 +204,22 @@ get_header(); ?>
         }
     });
     });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const target = document.querySelector('.section-blog');
+
+    function checkVisible() {
+      const rect = target.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (rect.top <= windowHeight * 0.5) {
+        target.classList.add('show');
+        window.removeEventListener('scroll', checkVisible); // 한 번만 실행
+      }
+    }
+
+    window.addEventListener('scroll', checkVisible);
+    checkVisible(); // 페이지 로딩 시 바로 체크
+  });
 </script>
+

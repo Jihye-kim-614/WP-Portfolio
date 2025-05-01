@@ -516,6 +516,7 @@ h6 a {
   padding-top: 0px;
   font-size: clamp(48px, 10vw, 120px);
   line-height: 110%;
+  
 }
 
 
@@ -622,17 +623,15 @@ blockquote p {
     padding: 0px !important;
     margin: 0px !important;
   }
-  /* .question-item {
-    padding: 4px 8px !important;
-
-  } */
+  .newsletter-item {
+    padding: 7px 20px !important;
 }
 /*--------------------------------------------------------------
 ## Layout
 --------------------------------------------------------------*/
 .site-main {
   min-height: 720px;
-  padding-top: 80px;
+  padding-top: 1vh;
 }
 
 section {
@@ -1750,8 +1749,8 @@ ul.menu > li > ul ul {
 # marquee
 --------------------------------------------------------------*/
 .marquee {
-  padding-bottom: 3px;
-  margin: 0 auto;
+  padding-bottom: 1vh;
+
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -3081,4 +3080,16 @@ switcher
   margin-bottom: 0.4rem;
   font-size: 0.95rem;
   color: #444;
+}
+
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }
