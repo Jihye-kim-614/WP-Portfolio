@@ -7,6 +7,11 @@ get_header();
 // 배경 이미지 설정
 $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
 ?>
+<div class="breadcrumbs-container">
+    <?php if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+    } ?>
+</div>
 
 <?php if (has_post_thumbnail()) : ?>
     <div class="page-header page-cover-img" style="background-image: url('<?php echo esc_url($thumb[0]); ?>')">

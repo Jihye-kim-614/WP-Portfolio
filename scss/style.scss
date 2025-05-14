@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 Theme Name: Jihye Kim
-Author: JihyeJihyeJihye
+Author: Jihye
 Author URI: http://jihye-kim.de
 Description: Jihye Kim's Portfolio
 */
@@ -163,12 +163,36 @@ About-page
 # Animation
 --------------------------------------------------------------*/
 .fade-up {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 }
 
 .fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
+
+/* Newsletter용 애니메이션 */
+.slide-in-left {
+	opacity: 0;
+	transform: translateX(-50px);
+	transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.slide-in-left.show {
+	opacity: 1;
+	transform: translateX(0);
+}
+// /* 느린 버전 (inner-padding 전용) */
+// .inner-padding .slide-in-left-slow {
+// 	opacity: 0;
+// 	transform: translateX(-50px);
+// 	transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+// }
+
+// .inner-padding .slide-in-left-slow.show {
+// 	opacity: 1;
+// 	transform: translateX(0);
+// }
+  
