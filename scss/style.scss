@@ -184,6 +184,11 @@ About-page
 	opacity: 1;
 	transform: translateX(0);
 }
+
+.breadcrumbs-container {
+  padding-top: 60px !important;
+}
+
 // /* 느린 버전 (inner-padding 전용) */
 // .inner-padding .slide-in-left-slow {
 // 	opacity: 0;

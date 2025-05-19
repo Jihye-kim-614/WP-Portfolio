@@ -6,14 +6,14 @@
 	top: 0;
 	left: 0;
 	z-index: 10;
-	background-color: #ffffff;
+	background-color: $bg-white;
   }
   .home .site-header {
-	background-color: #ffffff;
+	background-color: $bg-white;
   }
   .site-header .container {
 	max-width: 100%;
-	background-color: #ffffff;
+	background-color: $bg-white;
   }
   .site-header .site-logo-wrap {
 	position: relative;
@@ -58,15 +58,15 @@
   }
   ul.menu > li.button a {
 	font-size: 15px;
-	color: #fff !important;
+	color: $color-text-light-01 !important;
 	font-weight: normal;
   }
   ul.menu > li.button a:hover {
-	color: #fff !important;
+	color: $color-text-light-01 !important;
   }
   ul.menu > li.current-menu-item.button a,
   ul.menu > li.current-menu-item.button a:hover {
-	color: #fff !important;
+	color: $color-text-light-01 !important;
   }
   ul.menu > li > a {
 	font-size: 15px;
@@ -123,7 +123,7 @@
 	visibility: visible;
   }
   ul.menu > li ul {
-	background: #ffffff;
+	background: $bg-white;
 	position: absolute;
 	z-index: 9999;
 	visibility: hidden;
@@ -257,13 +257,13 @@
   .menu-container .more-navigation li.button a {
 	font-size: 20px;
 	padding: 12px;
-	color: #fff;
+	color: $color-text-light-01;
 	text-align: center;
 	font-weight: normal;
   }
   .menu-container .more-navigation li.current-post-ancestor > a, .menu-container .more-navigation li.current-menu-parent > a {
 	color: #000000;
-	background-color: #fff;
+	background-color: $bg-white;
   }
   .menu-container .more-navigation li .sub-menu {
 	display: none;
@@ -275,7 +275,7 @@
   }
   .menu-container .more-navigation li .sub-menu li.current-menu-item > a {
 	color: #000000;
-	background-color: #fff;
+	background-color: $bg-white;
   }
   .menu-container .more-navigation li .sub-menu a {
 	font-size: 16px;

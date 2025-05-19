@@ -13,7 +13,7 @@
     transition: 0.3s;
   }
   .card-type:hover {
-    background-color: #fff;
+    background-color: $bg-white;
   }
   .card-type:hover .entry-title,
   .card-type:hover .entry-category,

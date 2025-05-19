@@ -338,7 +338,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #ffffff;
 }
 
 hr {
@@ -615,7 +615,7 @@ blockquote p {
 --------------------------------------------------------------*/
 .site-main {
   min-height: 720px;
-  padding-top: 1vh;
+  padding-top: 2vh;
 }
 
 section {
@@ -988,7 +988,7 @@ input[type=submit]:focus,
 .wp-block-file__button:focus {
   outline: none;
   background-color: #b4b1ad;
-  color: #ffffff;
+  color: #fff;
 }
 
 button:disabled,
@@ -1045,7 +1045,7 @@ input[type=button].line-button:hover,
 input[type=reset].line-button:hover,
 input[type=submit].line-button:hover,
 .wp-block-file__button.line-button:hover {
-  color: #ffffff;
+  color: #fff;
   background-color: #b4b1ad;
 }
 
@@ -1501,7 +1501,7 @@ ul.menu > li > ul ul {
 
 .menu-container .more-navigation li.current-post-ancestor > a, .menu-container .more-navigation li.current-menu-parent > a {
   color: #000000;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .menu-container .more-navigation li .sub-menu {
@@ -1516,7 +1516,7 @@ ul.menu > li > ul ul {
 
 .menu-container .more-navigation li .sub-menu li.current-menu-item > a {
   color: #000000;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .menu-container .more-navigation li .sub-menu a {
@@ -1607,7 +1607,7 @@ ul.menu > li > ul ul {
 }
 
 .card-type:hover {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .card-type:hover .entry-title,
@@ -1916,13 +1916,12 @@ ul.menu > li > ul ul {
 .footer__container {
   width: 100%;
   margin: 0 auto;
-  padding: 40px 60px;
   border-top: 1px solid #3e4246;
 }
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 30px;
+  gap: 12px;
 }
 .footer__address {
   line-height: 1.6;
@@ -2001,7 +2000,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #ffffff;
   -ms-overflow-style: none;
   overflow: auto;
 }
@@ -2198,7 +2197,7 @@ article {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #ffffff;
+  color: #fff;
 }
 
 .post-header p {
@@ -2577,7 +2576,7 @@ figure img,
 
 .comment-form .form-submit .submit:hover {
   background-color: #b4b1ad;
-  color: #ffffff;
+  color: #fff;
   transition: 0.3s;
 }
 
@@ -2858,7 +2857,7 @@ figure img,
 }
 .lang-switcher button:hover {
   background-color: #b4b1ad;
-  color: #ffffff;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -3122,4 +3121,8 @@ About-page
 .slide-in-left.show {
   opacity: 1;
   transform: translateX(0);
+}
+
+.breadcrumbs-container {
+  padding-top: 60px !important;
 }/*# sourceMappingURL=style.css.map */

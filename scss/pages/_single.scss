@@ -14,7 +14,7 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #ffffff;
+    color: $color-text-light-01;
   }
   .post-header p {
     color: #E8E4DF;
@@ -51,7 +51,7 @@ article {
     font-size: 14px !important;
     line-height: 1;
     padding: 8px 12px;
-    color: #fff;
+    color: $color-text-light-01;
     border: none;
     background-color: #393d41;
     border-radius: 4px;
@@ -83,7 +83,7 @@ article {
     color: #E8E4DF;
   }
   .wp-block-file a.wp-block-file__button {
-    color: #fff;
+    color: $color-text-light-01;
   }
   
   /*--------------------------------------------------------------
@@ -165,7 +165,7 @@ article {
   }
   
   .wp-block-button__link {
-    color: #fff !important;
+    color: $color-text-light-01 !important;
   }
   
   /*--------------------------------------------------------------

@@ -13,6 +13,7 @@
 <div class="site-info">
 <div class="container">
     <div class="footer__container">
+        <div class="inner-padding">
         <div class="footer__grid">
 
             <div class="footer__address">
@@ -42,7 +43,7 @@
             </div>
 
 
-
+        </div>
         </div>
     </div>
     <div class="scroll-top">

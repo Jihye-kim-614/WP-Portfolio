@@ -4,11 +4,6 @@ Template Name: Team Swiper
 */
 
 get_header(); ?>
-<div class="breadcrumbs-container">
-    <?php if ( function_exists('yoast_breadcrumb') ) {
-        yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-    } ?>
-</div>
 
 <div class="page-header">
 	<div class="container">

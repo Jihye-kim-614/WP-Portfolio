@@ -22,7 +22,7 @@
   align-items: center;
 
   &:hover {
-    background-color: #ffffff;
+    background-color: $bg-white;
     border: 1px solid #3f3f3f;
     transition: 0.3s;
     color: #000000;
@@ -37,7 +37,7 @@
 }
 
 .question-item-link:hover .question-item {
-  background-color: #ffffff;
+  background-color: $bg-white;
   border: 1px solid #3f3f3f;
   transition: 0.3s;
   cursor: pointer;
@@ -136,14 +136,14 @@
     margin: 0 5px;
     font-weight: bold;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: $bg-white;
     border: 1px solid #aaaaaa;
     border-radius: 6px;
     color: #b4b1ad;
 
     &:hover {
       background-color: #b4b1ad;
-      color: #ffffff;
+      color: $color-text-light-01;
     }
   }
 }

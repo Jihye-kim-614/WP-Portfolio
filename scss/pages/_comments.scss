@@ -80,7 +80,7 @@ display: inline-block;
 }
 .comments-area .comment-reply-link:hover {
 background-color: #F06D49;
-color: #fff;
+color: $color-text-light-01;
 }
 .comments-area .comment-reply-link,
 .comments-area .comment-edit-link {
@@ -140,14 +140,14 @@ text-align: left;
 display: inline-block;
 width: auto;
 padding: 8px 18px;
-background-color: #fff;
+background-color: $color-text-light-01;
 border: 1px solid #aaa;
 border-radius: 6px;
 color: #b4b1ad;
 }
 .comment-form .form-submit .submit:hover {
 background-color: #b4b1ad;
-color: #ffffff;
+color: $color-text-light-01;
 transition: 0.3s;
 }
 

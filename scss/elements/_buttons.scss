@@ -35,7 +35,7 @@ input[type=submit]:focus,
 .wp-block-file__button:focus {
   outline: none;
   background-color: #b4b1ad;
-  color: #ffffff;
+  color: $color-text-light-01;
 }
 button:disabled,
 button .disabled,
@@ -87,7 +87,7 @@ input[type=button].line-button:hover,
 input[type=reset].line-button:hover,
 input[type=submit].line-button:hover,
 .wp-block-file__button.line-button:hover {
-  color: #ffffff;
+  color: $color-text-light-01;
   background-color: #b4b1ad;
 }
 

@@ -119,6 +119,17 @@
         </div>
     </header>
     
+<?php if ( !is_front_page() ) : ?>
+<div class="container">
+    <div class="inner-padding">
+        <div class="breadcrumbs-container">
+            <?php if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+            } ?>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
 
 
     <!-- 페이지 공통 레이아웃 -->
